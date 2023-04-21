@@ -33,7 +33,7 @@
         <script src="js/labels.js"></script>
         <script src="js/leaflet-measure.js"></script>
         <script src="data/countyname__1.js"></script>
-        <script src="data/_2.js"></script>
+        <script src="data/Taichung_accident_2.js"></script>
         <script>
         var highlightLayer;
         function highlightFeature(e) {
@@ -151,7 +151,7 @@
         });
         bounds_group.addLayer(layer_countyname__1);
         map.addLayer(layer_countyname__1);
-        function pop__2(feature, layer) {
+        function pop_Taichung_accident_2(feature, layer) {
             layer.on({
                 mouseout: function(e) {
                     for (i in e.target._eventParents) {
@@ -253,10 +253,10 @@
             layer.bindPopup(popupContent, {maxHeight: 400});
         }
 
-        function style__2_0(feature) {
+        function style_Taichung_accident_2_0(feature) {
             if (feature.properties['fid_count'] >= 21.000000 && feature.properties['fid_count'] <= 26.000000 ) {
                 return {
-                pane: 'pane__2',
+                pane: 'pane_Taichung_accident_2',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -271,7 +271,7 @@
             }
             if (feature.properties['fid_count'] >= 26.000000 && feature.properties['fid_count'] <= 34.000000 ) {
                 return {
-                pane: 'pane__2',
+                pane: 'pane_Taichung_accident_2',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -286,7 +286,7 @@
             }
             if (feature.properties['fid_count'] >= 34.000000 && feature.properties['fid_count'] <= 45.000000 ) {
                 return {
-                pane: 'pane__2',
+                pane: 'pane_Taichung_accident_2',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -301,7 +301,7 @@
             }
             if (feature.properties['fid_count'] >= 45.000000 && feature.properties['fid_count'] <= 60.000000 ) {
                 return {
-                pane: 'pane__2',
+                pane: 'pane_Taichung_accident_2',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -316,7 +316,7 @@
             }
             if (feature.properties['fid_count'] >= 60.000000 && feature.properties['fid_count'] <= 85.000000 ) {
                 return {
-                pane: 'pane__2',
+                pane: 'pane_Taichung_accident_2',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -331,7 +331,7 @@
             }
             if (feature.properties['fid_count'] >= 85.000000 && feature.properties['fid_count'] <= 154.000000 ) {
                 return {
-                pane: 'pane__2',
+                pane: 'pane_Taichung_accident_2',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -345,20 +345,20 @@
             }
             }
         }
-        map.createPane('pane__2');
-        map.getPane('pane__2').style.zIndex = 402;
-        map.getPane('pane__2').style['mix-blend-mode'] = 'normal';
-        var layer__2 = new L.geoJson(json__2, {
+        map.createPane('pane_Taichung_accident_2');
+        map.getPane('pane_Taichung_accident_2').style.zIndex = 402;
+        map.getPane('pane_Taichung_accident_2').style['mix-blend-mode'] = 'normal';
+        var layer_Taichung_accident_2 = new L.geoJson(json_Taichung_accident_2, {
             attribution: '',
             interactive: true,
-            dataVar: 'json__2',
-            layerName: 'layer__2',
-            pane: 'pane__2',
-            onEachFeature: pop__2,
-            style: style__2_0,
+            dataVar: 'json_Taichung_accident_2',
+            layerName: 'layer_Taichung_accident_2',
+            pane: 'pane_Taichung_accident_2',
+            onEachFeature: pop_Taichung_accident_2,
+            style: style_Taichung_accident_2_0,
         });
-        bounds_group.addLayer(layer__2);
-        map.addLayer(layer__2);
+        bounds_group.addLayer(layer_Taichung_accident_2);
+        map.addLayer(layer_Taichung_accident_2);
         setBounds();
         </script>
     </body>
